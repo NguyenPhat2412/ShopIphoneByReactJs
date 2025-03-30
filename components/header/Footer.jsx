@@ -4,7 +4,7 @@ const Footer = () => {
   const [columns, setColumns] = useState([]);
 
   useEffect(() => {
-    fetch("/public/footer.json") // Đường dẫn đến file JSON
+    fetch("/footer.json") // Đường dẫn đến file JSON
       .then((res) => res.json())
       .then((data) => setColumns(data))
       .catch((err) => console.error(err.message));
