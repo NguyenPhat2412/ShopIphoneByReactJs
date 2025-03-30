@@ -4,8 +4,8 @@
     "name": "Hỏi Dân IT & Eric",
     "url": "https://hoidanit.vn"
   },
-  "homepage": "https://nguyenphat2412.github.io/shopiphonebyreactjs",
-  "private": true,
+  "homepage": "https://NguyenPhat2412.github.io/ShopIphoneByReactjs",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
