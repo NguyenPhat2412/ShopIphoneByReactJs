@@ -1,0 +1,9 @@
+.container-register {
+  max-width: 1080px;
+  margin: auto;
+  background-image: url("../../img/banner1.jpg");
+  background-size: cover;
+  background-color: aqua;
+  background-position: center;
+  width: 100%;
+}

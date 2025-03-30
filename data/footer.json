@@ -1,0 +1,22 @@
+[
+  {
+    "col_number": 1,
+    "col_name": "Customer Services",
+    "col_values": [
+      "Help & Contact Us",
+      "Return & Refunds",
+      "Online Stores",
+      "Terms & Conditions"
+    ]
+  },
+  {
+    "col_number": 2,
+    "col_name": "Company",
+    "col_values": ["What We Do", "Available Services", "Latest Posts", "FAQs"]
+  },
+  {
+    "col_number": 3,
+    "col_name": "Social Media",
+    "col_values": ["Twitter", "Facebook", "Instagram", "Youtube"]
+  }
+]
