@@ -4,7 +4,7 @@ const HomeImg = () => {
   const [items, setItems] = useState(null);
 
   useEffect(() => {
-    fetch("/data/Img.json") // Kiểm tra đường dẫn này có đúng không
+    fetch("/Img.json") // Kiểm tra đường dẫn này có đúng không
       .then((res) => res.json())
       .then((data) => setItems(data))
       .catch((err) => console.error("Error loading images:", err));
