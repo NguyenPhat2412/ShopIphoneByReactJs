@@ -23,10 +23,10 @@ function App() {
   return (
     <>
       <Header />
-      <BrowserRouter>
+      <BrowserRouter basename="/ShopIphoneByReactJs">
         <Routes>
-          <Route path="/ShopIphoneByReactJs/" element={<HomePage />} />
-          <Route path="/ShopIphoneByReactJs/shop" element={<ShopPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<ShopPage />} />
           <Route
             path="/ShopIphoneByReactJs/detail/:id"
             element={<DetailPage />}
