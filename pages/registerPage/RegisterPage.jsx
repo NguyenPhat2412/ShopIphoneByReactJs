@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./RegisterPage.css";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState("");
@@ -9,7 +8,6 @@ const SignUpPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();
 
   const handleSignUp = () => {
     if (!email || !password || !fullName || !phone) {
@@ -31,7 +29,7 @@ const SignUpPage = () => {
     users.push({ email, password, fullName, phone });
     localStorage.setItem("userArr", JSON.stringify(users));
     alert("Đăng ký thành công! Chuyển hướng đến trang đăng nhập...");
-    navigate("/login");
+    window.location.href = "/ShopIphoneByReactJs/login";
   };
 
   return (
