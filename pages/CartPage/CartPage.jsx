@@ -88,14 +88,11 @@ const CartPage = () => {
             </table>
 
             <div className="flex justify-between mt-5 bg-gray-100 py-5 px-2">
-              <button
-                onClick={() => navigate("/ShopIphoneByReactJs/shop")}
-                className="px-4 py-2"
-              >
+              <button onClick={() => navigate("/shop")} className="px-4 py-2">
                 Continue Shopping
               </button>
               <button
-                onClick={() => navigate("/ShopIphoneByReactJs/checkout")}
+                onClick={() => navigate("/checkout")}
                 className="border  px-4 py-2"
               >
                 Proceed to Checkout
