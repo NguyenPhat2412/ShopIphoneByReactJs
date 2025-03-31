@@ -25,7 +25,7 @@ const LoginPage = () => {
 
     localStorage.setItem("currentUser", JSON.stringify(validUser));
     alert("Đăng nhập thành công!");
-    window.location.href = "/";
+    window.location.href = "/ShopIphoneByReactJs";
   };
 
   return (
@@ -58,7 +58,10 @@ const LoginPage = () => {
             style={{ marginTop: "50px", marginBottom: "50px" }}
           >
             Create an account?
-            <Link to="/register" style={{ color: "#00CCCC" }}>
+            <Link
+              to="/ShopIphoneByReactJs/register"
+              style={{ color: "#00CCCC" }}
+            >
               Sign Up
             </Link>
           </div>

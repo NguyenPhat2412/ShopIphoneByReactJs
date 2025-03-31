@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./RegisterPage.css";
+import { Link } from "react-router-dom";
 
 const SignUpPage = () => {
   const [fullName, setFullName] = useState("");
@@ -70,13 +71,13 @@ const SignUpPage = () => {
           </button>
           <div className="text-center mt-3 pt-6">
             Login?
-            <a
-              href="/login"
+            <Link
+              to="/ShopIphoneByReactJs/login"
               className="text-blue-500 px-1"
               style={{ color: "#00CCCC" }}
             >
               Click
-            </a>
+            </Link>
           </div>
         </div>
       </div>
