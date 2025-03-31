@@ -1,9 +1,9 @@
 {
   "photos": [
-    "../img/product_1.png",
-    "../img/product_2.png",
-    "../img/product_3.png",
-    "../img/product_4.png",
-    "../img/product_5.png"
+    "/img/product_1.png",
+    "/img/product_2.png",
+    "/img/product_3.png",
+    "/img/product_4.png",
+    "/img/product_5.png"
   ]
 }
