@@ -29,7 +29,7 @@ const SignUpPage = () => {
     users.push({ email, password, fullName, phone });
     localStorage.setItem("userArr", JSON.stringify(users));
     alert("Đăng ký thành công! Chuyển hướng đến trang đăng nhập...");
-    window.location.href = "/ShopIphoneByReactJs/login";
+    window.location.href = "/login";
   };
 
   return (
