@@ -26,24 +26,28 @@ const NavBarHome = () => {
           style={{ margin: "0 auto", maxWidth: "1080px" }}
         >
           <div className="flex space-x-4 gap-10">
-            <a href="/" className="font-bold" style={{ color: "#FFCC66" }}>
+            <a
+              href="/ShopIphoneByReactJs/"
+              className="font-bold"
+              style={{ color: "#FFCC66" }}
+            >
               Home
             </a>
-            <a href="/shop">Shop</a>
+            <a href="/ShopIphoneByReactJs/shop">Shop</a>
           </div>
           <div className="text-3xl">
             <h3>BOUTIQUE</h3>
           </div>
           <div className="flex space-x-4 gap-10">
-            <a href="/cart" className="flex gap-1">
+            <a href="/ShopIphoneByReactJs/cart" className="flex gap-1">
               <i className="fa-solid fa-cart-flatbed"></i>Cart
             </a>
             {!currentUser ? (
-              <a href="/login" className="flex gap-1">
+              <a href="/ShopIphoneByReactJs/login" className="flex gap-1">
                 <i className="fa-solid fa-user"></i> Login
               </a>
             ) : (
-              <a href="/login" className="flex gap-1">
+              <a href="/ShopIphoneByReactJs/login" className="flex gap-1">
                 <i className="fa-solid fa-user"></i> {currentUser.fullName}
                 <button
                   onClick={handleLogout}
