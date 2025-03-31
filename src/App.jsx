@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import HomePage from "../pages/home/HomePage";
 // import ShopPage from "../pages/shop/ShopPage";
 import DetailPage from "../pages/detail/DetailPage";
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      <BrowserRouter basename="/ShopIphoneByReactJs">
+      <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/shop" element={<ShopPage />} />
@@ -33,8 +33,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
-      </BrowserRouter>
-
+      </Router>
       <LiveChat isOpen={isOpen} />
       <ChatBubble toggleChat={toggleChat} isOpen={isOpen} />
       <Footer />
