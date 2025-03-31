@@ -25,7 +25,7 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/ShopIphoneByReactJs/" element={<HomePage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/detail/:id" element={<DetailPage />} />
           <Route path="/cart" element={<CartPage />} />
