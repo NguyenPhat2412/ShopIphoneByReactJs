@@ -1,53 +1,49 @@
-// import { useNavigate } from "react-router-dom";
-
 import { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"; // ✅ Import Link
 
 const NavBarHome = () => {
   const [currentUser, setCurrentUser] = useState(null);
+
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("currentUser"));
     if (user) {
       setCurrentUser(user);
     }
   }, []);
+
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
     setCurrentUser(null);
     alert("Đăng xuất thành công!");
-    window.location.href = "/";
+    window.location.href = "/ShopIphoneByReactJs";
   };
 
   return (
     <>
       <nav className="navbar navbar-item items-center px-4 py-6 bg-white">
         <div
-          className="flex justify-between "
+          className="flex justify-between"
           style={{ margin: "0 auto", maxWidth: "1080px" }}
         >
           <div className="flex space-x-4 gap-10">
-            <a
-              href="/ShopIphoneByReactJs/"
-              className="font-bold"
-              style={{ color: "#FFCC66" }}
-            >
+            <Link to="/" className="font-bold" style={{ color: "#FFCC66" }}>
               Home
-            </a>
-            <a href="/ShopIphoneByReactJs/shop">Shop</a>
+            </Link>
+            <Link to="/shop">Shop</Link>
           </div>
           <div className="text-3xl">
             <h3>BOUTIQUE</h3>
           </div>
           <div className="flex space-x-4 gap-10">
-            <a href="/ShopIphoneByReactJs/cart" className="flex gap-1">
-              <i className="fa-solid fa-cart-flatbed"></i>Cart
-            </a>
+            <Link to="/cart" className="flex gap-1">
+              <i className="fa-solid fa-cart-flatbed"></i> Cart
+            </Link>
             {!currentUser ? (
-              <a href="/ShopIphoneByReactJs/login" className="flex gap-1">
+              <Link to="/login" className="flex gap-1">
                 <i className="fa-solid fa-user"></i> Login
-              </a>
+              </Link>
             ) : (
-              <a href="/ShopIphoneByReactJs/login" className="flex gap-1">
+              <div className="flex gap-1">
                 <i className="fa-solid fa-user"></i> {currentUser.fullName}
                 <button
                   onClick={handleLogout}
@@ -55,7 +51,7 @@ const NavBarHome = () => {
                 >
                   {`(Logout)`}
                 </button>
-              </a>
+              </div>
             )}
           </div>
         </div>
