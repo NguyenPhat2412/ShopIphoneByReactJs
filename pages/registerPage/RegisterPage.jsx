@@ -72,7 +72,7 @@ const SignUpPage = () => {
           <div className="text-center mt-3 pt-6">
             Login?
             <Link
-              to="/ShopIphoneByReactJs/login"
+              to="/login"
               className="text-blue-500 px-1"
               style={{ color: "#00CCCC" }}
             >

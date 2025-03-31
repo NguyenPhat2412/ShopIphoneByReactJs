@@ -58,10 +58,7 @@ const LoginPage = () => {
             style={{ marginTop: "50px", marginBottom: "50px" }}
           >
             Create an account?
-            <Link
-              to="/ShopIphoneByReactJs/register"
-              style={{ color: "#00CCCC" }}
-            >
+            <Link to="/register" style={{ color: "#00CCCC" }}>
               Sign Up
             </Link>
           </div>
