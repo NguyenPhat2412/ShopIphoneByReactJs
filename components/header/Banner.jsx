@@ -9,7 +9,7 @@ const Banner = () => {
     <div className="relative w-full h-[500px]">
       {/* Hình ảnh nền */}
       <img
-        src="/img/banner1.jpg"
+        src="/ShopIphoneByReactJs/img/banner1.jpg"
         alt="Banner"
         className="w-full h-full object-cover"
       />
