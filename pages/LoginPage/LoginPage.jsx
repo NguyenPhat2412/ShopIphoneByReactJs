@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import banner from "../../img/banner1.jpg";
 import "./LoginPage.css";
+import { Link } from "react-router-dom";
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -57,9 +58,9 @@ const LoginPage = () => {
             style={{ marginTop: "50px", marginBottom: "50px" }}
           >
             Create an account?
-            <a href="/register" style={{ color: "#00CCCC" }}>
+            <Link to="/register" style={{ color: "#00CCCC" }}>
               Sign Up
-            </a>
+            </Link>
           </div>
         </div>
       </div>
